@@ -17,15 +17,10 @@ def calculate_vector_properties(vector_a, vector_b):
     angle_deg = np.degrees(angle_rad)
 
     return dot_product, angle_deg
-
-# --- Екі векторды анықтау ---
-# Вектор A: (1, 2, 3)
+    
 vector_A = np.array([1, 2, 3])
-
-# Вектор B: (4, -1, 0)
 vector_B = np.array([4, -1, 5])
 
-# Есептеу
 scalar_product, angle_in_degrees = calculate_vector_properties(vector_A, vector_B)
 
 print(f"Вектор A: {vector_A}")
@@ -38,4 +33,5 @@ if angle_in_degrees is not None:
     print(f"2. Векторлар арасындағы бұрыш: {angle_in_degrees:.2f}°")
 else:
     print(f"1. Скаляр көбейтінді (A ⋅ B): {scalar_product}")
+
     print("2. Бұрышты есептеу мүмкін емес (Нөлдік вектор бар).")
